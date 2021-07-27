@@ -1,0 +1,25 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 0;
+    margin: 0 get_vw(30) 0 auto;
+    z-index: 3;
+    @include sp {
+        margin: 0 get_vw_sp(15) 0 auto;
+    }
+
+    &__link {
+        font-size: get_vw(20);
+        color: transparent;
+        -webkit-text-stroke: 1px #645c5b;
+        text-stroke: 1px #645c5b;
+        text-fill-color: transparent;
+        text-decoration: none;
+        padding: 0 get_vw(20);
+        @include sp {
+            font-size: get_vw_sp(13);
+            padding: 0 get_vw_sp(11);
+        }
+    }
+}
